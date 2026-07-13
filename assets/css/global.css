@@ -3,7 +3,7 @@
    ================================ */
 :root {
     --color-primary: #FFEA00;
-    --color-primary-dark: #0056b3;
+    --color-primary-dark: #ffffff;
     --color-dark: #222;
     --color-text: #FF0000;
     --color-light: #FF0000;
@@ -665,5 +665,97 @@ strong {
         /* center text inside button */
         font-size: 0.9rem;
         padding: var(--spacing-sm);
+    }
+}
+
+/* ==========================
+   Tablet (≤992px)
+========================== */
+@media (max-width: 992px) {
+
+    .container {
+        padding: 18px;
+        gap: 18px;
+        height: auto;
+    }
+
+    .container-image img {
+        max-width: 300px;
+    }
+
+    .container-details {
+        padding: 20px;
+        overflow-y: visible;
+    }
+}
+
+/* ==========================
+   Mobile (768px and below)
+========================== */
+@media (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 15px;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .container h3 {
+        width: 100%;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .container-image {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-image img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .container-details {
+        order: 2;
+        width: 100%;
+        padding: 0;
+        overflow: visible;
+    }
+
+    .container-list li {
+        font-size: 1rem;
+    }
+}
+
+/* ==========================
+   Small Mobile (480px and below)
+========================== */
+@media (max-width: 480px) {
+
+    .container {
+        margin: 10px;
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .container h3 {
+        font-size: 1.3rem;
+    }
+
+    .container-image img {
+        max-width: 100%;
+    }
+
+    .container-list li {
+        font-size: 0.95rem;
+        padding: 8px 10px;
     }
 }
