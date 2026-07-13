@@ -1,0 +1,90 @@
+/* Footer Styling */
+.site-footer {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 40px;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-copyrights {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-copyrights h4,h5 {
+    margin: 0 0 15px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.footer-copyrights a:hover,
+.footer-copyrights a:focus {
+    color: #ffd700;
+}
+
+/* Tablet Responsive (768px and below) */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 30px 20px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-copyrights {
+        text-align: center;
+    }
+    
+    .footer-copyrights p {
+        font-size: 0.9em;
+    }
+
+}
+
+/* Mobile Responsive (576px and below) */
+@media (max-width: 576px) {
+    .site-footer {
+        padding: 20px 15px;
+    }
+    
+    .footer-company h3 {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    
+    .footer-company p {
+        font-size: 0.85em;
+        margin: 5px 0;
+    }
+    
+    .footer-brands h4 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    
+    .brand-logos {
+        gap: 10px;
+    }
+    
+    .brand-logos img {
+        max-width: 50px;
+        max-height: 40px;
+    }
+}
+
