@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             if (footerElement) {
                 footerElement.innerHTML = footerData;
                 footerElement.setAttribute('role', 'contentinfo');
+
             }
         } else {
             console.warn('Failed to load footer');
