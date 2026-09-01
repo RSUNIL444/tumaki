@@ -273,6 +273,21 @@ strong {
     border-radius: 18px;
     padding: 16px;
     min-height: 220px;
+    position: relative;
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #db250d;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    z-index: 2;
+    letter-spacing: 0.5px;
 }
 
 .container-image img {
